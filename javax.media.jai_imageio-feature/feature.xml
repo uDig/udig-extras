@@ -24,7 +24,7 @@ http://www.eclipse.org/legal/epl-v10.html
    <plugin
          id="javax.media.jai_imageio"
          download-size="3132"
-         install-size="0"
+         install-size="3132"
          version="0.0.0"
          unpack="false"/>
 
@@ -34,7 +34,7 @@ http://www.eclipse.org/legal/epl-v10.html
          ws="win32"
          arch="x86"
          download-size="3548"
-         install-size="0"
+         install-size="3548"
          version="0.0.0"
          fragment="true"/>
 
@@ -44,7 +44,7 @@ http://www.eclipse.org/legal/epl-v10.html
          ws="gtk"
          arch="x86"
          download-size="1860"
-         install-size="0"
+         install-size="1860"
          version="0.0.0"
          fragment="true"/>
 
@@ -54,7 +54,7 @@ http://www.eclipse.org/legal/epl-v10.html
          ws="gtk"
          arch="x86_64"
          download-size="1860"
-         install-size="0"
+         install-size="1860"
          version="0.0.0"
          fragment="true"/>
 
