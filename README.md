@@ -11,15 +11,15 @@ are build with tycho.
 
 1. Download Java Advanced Imaging jar's and native libs
 
-```shell
-mvn clean install -f pom-libs.xml
-```
+  ```
+    mvn clean install -f pom-libs.xml
+  ```
 
 1. Build Bundles, Fragements, Features and P2 Repository
 
-```
-mvn clean install -f pom.xml
-```
+  ```
+    mvn clean install -f pom.xml
+  ```
 
 
 How to use the update site
