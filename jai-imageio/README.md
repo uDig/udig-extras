@@ -1,7 +1,7 @@
 jai-imageio
 ===========
 
-This provides OSGi Bundles and native Fragments for 
+This project provides modules to build OSGi Bundles and native Fragments for 
 [Java Advanced Imaging (JAI) and JAI ImageIO](http://en.wikipedia.org/wiki/Java_Advanced_Imaging) Java Extension. At the moment native support is available for
 
  * Windows 32bit
