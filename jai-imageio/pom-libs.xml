@@ -35,6 +35,13 @@
     
     <packaging>pom</packaging>
 
+    <repositories>
+        <repository>
+            <id>OSGeoRelease</id>
+            <url>http://download.osgeo.org/webdav/geotools/</url>
+        </repository>
+    </repositories>
+	
     <build>
         <pluginManagement>
             <plugins>
