@@ -1,17 +1,20 @@
 jai-imageio
 ===========
 
-Java Advanced Imaging (JAI) and JAI ImageIO as OSGi bundles and fragments. This project provides access to Java extensions with native support for
+This provides OSGi Bundles and native Fragments for 
+[Java Advanced Imaging (JAI) and JAI ImageIO](http://en.wikipedia.org/wiki/Java_Advanced_Imaging) Java Extension. At the moment native support is available for
+
  * Windows 32bit
  * Linux 32bit 
  * Linux 64bit
+
 and non-native support for all other platforms. Minimum required JRE is 1.6
  
 How to build
 ------------
 
 Maven 3.0.x required. Eclipse plugin projects, fragements, features, and repository
-are build with Eclipse Tycho.
+are build with [Eclipse Tycho](https://eclipse.org/tycho).
 
 1. Download Java Advanced Imaging jar's and native libs
 
@@ -24,7 +27,6 @@ are build with Eclipse Tycho.
   ```
     mvn clean install -f pom.xml
   ```
-
 
 How to use the update site
 --------------------------
