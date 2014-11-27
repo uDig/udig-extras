@@ -1,0 +1,21 @@
+language: java
+jdk:
+  - openjdk7 # just run openJDK
+  - oraclejdk7 # oracle jdk
+env:
+  global:
+    - MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
+install:
+  - "travis_wait mvn install -f pom-libs.xml -B -V" #download dependencies
+
+script: "travis_wait mvn install -B -V"
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+  irc:
+    channels: "irc.freenode.org#udig"
+    on_success: change
+    on_failure: always
+    template: "%{repository} (%{branch}:%{commit}): %{message} (%{build_url})"
