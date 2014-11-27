@@ -6,9 +6,9 @@ env:
   global:
     - MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
 install:
-  - "travis_wait mvn install -f pom-libs.xml -B -V" #download dependencies
+  - "travis_wait mvn install -f jai-imageio/pom-libs.xml -B -V" #download dependencies
 
-script: "travis_wait mvn install -B -V"
+script: "travis_wait mvn install -f jai-imageio/pom.xml -B -V"
 
 notifications:
   email:
