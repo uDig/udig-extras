@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>javax.media.jai_imageio</groupId>
@@ -8,42 +9,6 @@
         <relativePath>../pom-libs.xml</relativePath>
     </parent>
 
-    <!-- This script was created to automagically download the external libs 
-        required for this plugin to build and export correctly.
-        
-        To download the required  libraries, use:
-            
-            mvn package -f pom-libs.xml 
-        
-        After they have downloaded, make sure you:
-          - refresh this project in Eclipse;
-          - verify the classpath (Manfiest Runtime tab) references the libs
-          - ensure the lib versions in the classpath are also correct. -->
-
-
-    <developers>
-        <developer>
-            <id>Sev</id>
-            <name>Severin</name>
-            <email>djseverin@gmail.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+10</timezone>
-        </developer>
-        <developer>
-            <id>fgdrf</id>
-            <name>Frank Gasdorf</name>
-            <email>fgdrf@users.sourceforge.net</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+1</timezone>
-        </developer>
-    </developers>
-
-    <modelVersion>4.0.0</modelVersion>
-    
     <artifactId>download.native-linux.x86</artifactId>
     <name>JAI Download native libs : linux x86</name>
     
