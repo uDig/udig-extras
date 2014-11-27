@@ -32,31 +32,23 @@
             </plugin>
             
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy_native_libs</id>
-                        <phase>compile</phase>
-                        <configuration>
-                            <target>
-                                <get dest="${basedir}">
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/clib_jiio.dll"/>
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/clib_jiio_sse2.dll"/>
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/clib_jiio_util.dll"/>
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/mlib_jai.dll"/>
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/mlib_jai_mmx.dll"/>
-                                    <url url="http://udig.refractions.net/files/downloads/jre/jai/imageio.win32.x86/mlib_jai_util.dll"/>
-                                </get>
-                            </target>
-                        </configuration>
+                        <phase>validate</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>download</goal>
                         </goals>
-                    </execution>
+                        <configuration>
+                            <url>${refractions.download.url}/imageio.win32.x86/</url>
+                            <includes>*.dll</includes>
+                            <toDir>${basedir}</toDir>
+                        </configuration>
+                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
-    
 </project>

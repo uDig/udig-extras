@@ -40,7 +40,12 @@
             <url>http://download.osgeo.org/webdav/geotools/</url>
         </repository>
     </repositories>
-	
+
+    <properties>
+        <!-- base url to download native libs and core jar's -->
+        <refractions.download.url>http://udig.refractions.net/files/downloads/jre/jai</refractions.download.url>
+    </properties>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -57,9 +62,9 @@
                 </plugin>
             
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-antrun-plugin</artifactId>
-                    <version>1.7</version>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>maven-wagon-plugin</artifactId>
+                    <version>1.0-beta-5</version>
                 </plugin>
             </plugins>
         </pluginManagement>
