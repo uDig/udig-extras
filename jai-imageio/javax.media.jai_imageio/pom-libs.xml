@@ -69,7 +69,6 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>copy-dependencies</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
@@ -88,6 +87,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>wagon-maven-plugin</artifactId>
+                <version>${wagon.version}</version>
                 <executions>
                     <execution>
                         <phase>validate</phase>
