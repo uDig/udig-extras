@@ -1,7 +1,7 @@
 udig-extras
 ===========
 
-Current build-state from Travis : !https://travis-ci.org/uDig/udig-extras.svg
+Current build-state from Travis : [![Build Status](https://travis-ci.org/uDig/udig-extras.svg)](https://travis-ci.org/uDig/udig-extras)
 
 
 This project builds Java Advanced Imaging (JAI) and JAI ImageIO as OSGi bundles and fragments
